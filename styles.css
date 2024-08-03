@@ -122,17 +122,19 @@ header {
     cursor: pointer;
     border-radius: 5px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end; /* Align text to the bottom of the image */
+    justify-content: center; /* Center the content horizontally */
     margin: 10px;
-    text-align: center;
+    text-align: center; /* Align text to the left */
 }
 
 .buttons-style img {
     width: 20px;
     height: 20px;
     margin-right: 8px; /* Space between image and text */
+    vertical-align: bottom; /* Ensure image aligns with text at the bottom */
 }
+
 
 /* Popup Styles */
 .popup {
