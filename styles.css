@@ -26,6 +26,7 @@ header {
     max-width: 900px; /* Same as #main-content */
     margin: 0 auto; /* Center the header */
     padding: 20px 0; /* Adjust padding as needed */
+    align-items: center;
 }
 
 /* Overlay Styles */
