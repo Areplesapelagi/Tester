@@ -1,0 +1,96 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #5c5c8a;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.invitation h2 {
+    font-size: 2em;
+    color: #7f7f99;
+    margin: 20px 0;
+}
+
+.invitation p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.buttons {
+    margin: 30px 0;
+}
+
+button {
+    background-color: #5c5c8a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a4a70;
+    transform: scale(1.05);
+}
+
+#form-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.form-container {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
