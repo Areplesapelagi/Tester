@@ -28,6 +28,7 @@ header {
     margin: 0 auto; /* Center the header */
     padding: 20px 0; /* Adjust padding as needed */
     align-items: center;
+    text-align: center;
 }
 
 /* Overlay Styles */
