@@ -82,7 +82,6 @@ header {
     transform: scale(1.05);
 }
 
-
 /* Navbar Styles */
 .navbar {
     position: fixed;
@@ -111,6 +110,27 @@ header {
     width: 24px;
     height: 24px;
     margin-bottom: 5px;
+}
+
+/* Buttons Styles */
+.buttons-style {
+    background: none;
+    border: 1px solid #5c5c8a;
+    color: #5c5c8a;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.buttons-style img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Space between image and text */
 }
 
 /* Popup Styles */
@@ -169,10 +189,5 @@ header {
     .nav-button img {
         width: 20px;
         height: 20px;
-    }
-
-    .buttons-style img{
-          width: 20px;
-          height: 20px;
     }
 }
