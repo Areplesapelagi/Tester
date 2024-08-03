@@ -11,6 +11,7 @@ body {
     align-items: center;
 }
 
+/* Overlay Styles */
 #overlay {
     position: fixed;
     top: 0;
@@ -56,10 +57,14 @@ body {
     transform: scale(1.05);
 }
 
+/* Main Content Styles */
 #main-content {
     display: none; /* Initially hide main content */
+    width: 100%;
+    padding-bottom: 60px; /* Ensure space for the sticky navbar */
 }
 
+/* Navbar Styles */
 .navbar {
     position: fixed;
     bottom: 0;
@@ -69,6 +74,7 @@ body {
     justify-content: space-around;
     padding: 10px 0;
     z-index: 999;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 
 .nav-button {
@@ -88,6 +94,7 @@ body {
     margin-bottom: 5px;
 }
 
+/* Popup Styles */
 .popup {
     display: none;
     position: fixed;
