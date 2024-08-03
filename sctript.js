@@ -1,19 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const acquaintanceBtn = document.getElementById("acquaintance-btn");
-    const familyBtn = document.getElementById("family-btn");
-    const formSection = document.getElementById("form-section");
-    const acquaintanceForm = document.getElementById("acquaintance-form");
-    const familyForm = document.getElementById("family-form");
+    const openButton = document.getElementById("open-button");
+    const overlay = document.getElementById("overlay");
+    const mainContent = document.getElementById("main-content");
 
-    acquaintanceBtn.addEventListener("click", () => {
-        formSection.style.display = "block";
-        familyForm.style.display = "none";
-        acquaintanceForm.style.display = "block";
+    openButton.addEventListener("click", () => {
+        overlay.style.display = "none";
+        mainContent.style.display = "block";
     });
 
-    familyBtn.addEventListener("click", () => {
-        formSection.style.display = "block";
-        acquaintanceForm.style.display = "none";
-        familyForm.style.display = "block";
+    const contactBtn = document.getElementById("contact-btn");
+    const locationBtn = document.getElementById("location-btn");
+    const commentBtn = document.getElementById("comment-btn");
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("close-popup");
+    const popupText = document.getElementById("popup-text");
+
+    contactBtn.addEventListener("click", () => {
+        popupText.innerHTML = "<p>Contact content will go here.</p>";
+        popup.style.display = "block";
+    });
+
+    locationBtn.addEventListener("click", () => {
+        popupText.innerHTML = "<p>Location content will go here.</p>";
+        popup.style.display = "block";
+    });
+
+    commentBtn.addEventListener("click", () => {
+        popupText.innerHTML = "<p>Comment content will go here.</p>";
+        popup.style.display = "block";
+    });
+
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none";
     });
 });
