@@ -18,6 +18,7 @@ body {
     max-width: 900px; /* Limit the width for better readability */
     margin: 0 auto; /* Center the content horizontally */
     padding-bottom: 60px; /* Ensure space for the sticky navbar */
+    align-items: center;
 }
 
 /* Header Section */
