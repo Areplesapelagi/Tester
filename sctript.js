@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
         overlay.style.display = "none";
         mainContent.style.display = "block";
     });
+document.getElementById("open-button").addEventListener("click", () => {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+});
 
     const contactBtn = document.getElementById("contact-btn");
     const locationBtn = document.getElementById("location-btn");
