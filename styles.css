@@ -11,12 +11,21 @@ body {
     align-items: center; /* Center-align content */
 }
 
+/* Main Content Container */
 #main-content {
     display: none; /* Initially hide main content */
     width: 100%;
     max-width: 900px; /* Limit the width for better readability */
     margin: 0 auto; /* Center the content horizontally */
     padding-bottom: 60px; /* Ensure space for the sticky navbar */
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    max-width: 900px; /* Same as #main-content */
+    margin: 0 auto; /* Center the header */
+    padding: 20px 0; /* Adjust padding as needed */
 }
 
 /* Overlay Styles */
