@@ -122,11 +122,11 @@ header {
     cursor: pointer;
     border-radius: 5px;
     display: flex;
-    align-items: center; /* Align text to the bottom of the image */
-    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
     margin: 10px;
-    text-align: center; /* Align text to the left */
 }
+
 
 .buttons-style img {
     width: 20px;
