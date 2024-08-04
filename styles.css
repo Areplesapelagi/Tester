@@ -113,6 +113,13 @@ header {
 }
 
 /* Buttons Styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
 .buttons-style {
     background: none;
     border: 1px solid #5c5c8a;
