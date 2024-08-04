@@ -122,7 +122,7 @@ header {
     cursor: pointer;
     border-radius: 5px;
     display: flex;
-    align-items: flex-end; /* Align text to the bottom of the image */
+    align-items: center; /* Align text to the bottom of the image */
     justify-content: center; /* Center the content horizontally */
     margin: 10px;
     text-align: center; /* Align text to the left */
