@@ -1,70 +1,885 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majlis Perkahwinan Ariff dan Aini</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="overlay">
-        <div class="overlay-content">
-            <h2>UNDANGAN WALIMATUL URUS</h2>
-            <h3>Ariff & Aini</h3>
-            <button id="open-button">Buka</button>
-        </div>
-    </div>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="description" content="Our Digital Invitation">
+        <meta name="generator" content="WALIMATULURUS - Ariff &amp; Aini | You Are Invited">
+        <meta name="author" content="WALIMATULURUS - Ariff &amp; Aini | You Are Invited">
+        <meta property="og:title" content="WALIMATULURUS - Ariff &amp; Aini | You Are Invited">
+        <meta property="og:description" content="Our Digital Invitation">
 
-    <div id="main-content">
-        <header>
-        </header>
-        <main>
-            <section class="invitation">
-                <h2>السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h2>
-                <p>Hazmi Bin Zainol</p>
-                <p>&</p>
-                <p>Zarina Binti Ahmad</p>
-                <p>Diiringi penuh rasa kesyukuran ke hadrat ilahi,</p>
-                <p>sukacitanya kami mengundang</p>
-                <p>Dato' | Datin | Tuan | Puan | Encik | Cik</p>
-                <p>ke majlis perkahwinan anakanda kami</p>
-                <h3>Muhd Ariff Bin Hazmi ♡ Aini Hidanah Hayani Binti Nor Faizal</h3>
-                <p><strong>TEMPAT</strong><br>
-                2-18-G, Space U8 Mall, 6, Persiaran Pasak Bumi, Bukit Jelutong, 40150 Shah Alam, Selangor</p>
-                <p><strong>TARIKH</strong><br>
-                Ahad, 2 Februari 2025</p>
-                <p><strong>MASA</strong><br>
-                11:30 AM - 4:00 PM</p>
-            </section>
-            <section>
-                <p><strong>Diminta Dato' | Datin | Tuan | Puan | Encik | Cik</strong></p>
-                <p><strong>Untuk mengisi google form berkenaan bagi memudahkan semua pihak</strong></p>
-                <p>Terima kasih.</p>
-            </section>
-            <section class="buttons">
-                <button id="submit-btn" class="buttons-style"><img src="forms-icon.png">Submit</button>
-            </section>
-        </main>
+        <title>RSVP.online</title>
+        <meta name="theme-color" content="#fa2a8f">
+        <meta name="msapplication-navbutton-color" content="#fa2a8f">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link media="all" type="text/css" rel="stylesheet" href="https://undangan.my/pack/card/pack.min.css?id=9118ef4a14e26ccee2cb">
+        <style>
+            .slick-dots-container {
+                width: 5.5rem;
+                overflow: hidden;
+                display: block;
+                padding: 0;
+                margin: 0.625rem auto;
+                height: 0.875rem;
+                position: relative;
+            }
 
-        <div class="navbar">
-            <button id="contact-btn" class="nav-button"><img src="phone-icon.png" alt="Contact"></button>
-            <button id="location-btn" class="nav-button"><img src="location-icon.png" alt="Location"></button>
-            <button id="comment-btn" class="nav-button"><img src="comment-icon.png" alt="Comment"></button>
-        </div>
+            .slick-dots-container > ul {
+                padding: 0;
+                display: flex;
+                transition: all 0.25s;
+                position: relative;
+                margin: 0;
+                list-style: none;
+                transform: translateX(0);
+                align-items: center;
+                bottom: unset;
+                height: 100%;
+            }
 
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <span id="close-popup">&times;</span>
-                <div id="popup-text"></div>
+            .slick-dots-container > ul li {
+                width: 0.625rem;
+                height: 0.625rem;
+                margin: 0 0.25rem;
+                background-color: #efd5d5;
+                border: none;
+                border-radius: 50%;
+            }
+
+            .slick-dots-container > ul li button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 1.25rem;
+                height: 1.25rem;
+                padding: 0.3125rem;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: 0;
+                background: 0 0;
+            }
+
+            .slick-dots-container > ul li.p-small-1, .slick-dots-container > ul li.n-small-1 {
+                transform: scale(0.8);
+            }
+
+            .slick-dots-container > ul li.slick-active {
+                transform: scale(1.3);
+                transform-origin: center;
+                background: #e54595;
+            }
+
+            .slick-dots li button:before {
+                display: none;
+            }
+
+            .section > * {
+                color: black;
+            }
+
+            .section-first-image {
+                background-image: url('https://undangan.my/asset/mirror/TRADITIONAL-DANI-06_20190103054616433794.jpg/s3_template/reveal');
+            }
+
+            .card-plain > * {
+                opacity: 0;
+            }
+
+            .undangan-overlay {
+                background-image: url('https://undangan.my/asset/mirror/TRADITIONAL-DANI-06_20190103054616433794.jpg/s3_template/reveal');
+                background-size: 100% 100% !important;
+                background-repeat: no-repeat;
+            }
+
+            .section-third-image {
+                background-image: url('https://undangan.my/asset/mirror/TRADITIONAL-DANI-06_20190103054616439540.jpg/s3_template/reveal');
+            }
+
+            .undangan-overlay {
+                background-color: white;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 1;
+                transition: opacity 1s ease-out;
+                min-width: 300px;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .undangan-overlay .overlay-img {
+                position: absolute;
+                top: 55%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transition: 1.2s all;
+                transform: translateY(-55%);
+                width: 100%;
+                max-width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .undangan-overlay .overlay-img img {
+                width: 100%;
+            }
+
+            .overlay-transbox {
+                width: 100%;
+                height: 100%;
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                margin: 0;
+            }
+
+            .paginate-row .page-item.active .page-link {
+                background-color: #fd378e;
+                border-color: #fd378e;
+            }
+
+            .paginate-row .page-item {
+                margin-left: 10px;
+                text-align: center;
+            }
+
+            .paginate-row .page-item .page-link {
+                border-radius: 50px;
+                padding: .5rem .75rem;
+                min-width: 34px;
+            }
+
+            .paginate-row .page-item:not(:first-child):not(:last-child) {
+                display: none;
+            }
+
+            .button-action .music-btn {
+                position: fixed;
+                bottom: 110px;
+                right: 10px;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                font-size: 12px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <style>
+            html {
+                min-height: 100%;
+                background: #2797C9;
+                -webkit-text-size-adjust: none
+            }
+
+            #main-wrapper {
+                background: #2797C9;
+            }
+
+            .container {
+                padding: 0;
+                max-width: 600px !important;
+                min-width: 300px !important;
+            }
+
+            #main-wrapper {
+                padding: 0 !important;
+                background: #eee !important;
+                height: auto !important;
+            }
+
+            .swal2-popup .swal2-title {
+                font-size: 24px !important;
+                font-weight: 500 !important;
+            }
+
+            .swal2-popup.swal2-toast .swal2-title {
+                font-size: 1em !important;
+            }
+
+            .swal2-popup.swal2-toast .swal2-close {
+                line-height: .1 !important;
+                margin-bottom: 10px !important;
+            }
+
+            * {
+                scrollbar-width: none;
+                /* Firefox 64 */
+                -ms-overflow-style: none;
+                /* Internet Explorer 11 */
+            }
+
+            *::-webkit-scrollbar {
+                /** WebKit */
+                display: none;
+                width: 0px;
+                background: transparent;
+                /* make scrollbar transparent */
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
+                width: 0px;
+                background: transparent;
+                /* make scrollbar transparent */
+            }
+
+            html {
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <div class="container" style="position: relative">
+                <div class="main-content">
+                    <div id="data-calendar" data-jemputan=" Muhammad Ariff Bin Hazmi &amp; Aini Hidanah Hayani Binti Nur Faizal" data-detail=" Muhammad Ariff Bin Hazmi &amp; Aini Hidanah Hayani Binti Nur Faizal :2-18-G, Space U8 Mall, 6, Persiaran Pasak Bumi, Bukit Jelutong, 40150 Shah Alam, Selangor" data-location="Alami Event Hall, Selangor" data-date-start="02/02/2025 11:30 am" data-date-end="02/02/2025 04:30 pm"></div>
+                    <div class="card-plain" data-location={"lat" :"3.1552" ,"lng" :"101.7058" }>
+                        <div class="section first-section section-first-image bg-img">
+                            <div class="content text-center">
+                                <h5 class="content-header " style="font-family: Book Antiqua, serif !important; color: #000000 !important">
+                                    <label class='mb-0'>WALIMATULURUS</label>
+                                    <br>
+                                </h5>
+                                <div class="content-couple mt-4">
+                                    <h1 class="person-name highlight-font" style="font-family: Book Antiqua, serif !important; color: #000000 !important">Ariff </h1>
+                                    <h1 class="with-separator subtitle-font" style="font-family: Alex Brush, serif !important; color: #000000 !important">&amp;</h1>
+                                    <h1 class="person-spouse-name highlight-font" style="font-family: Book Antiqua, serif !important; color: #000000 !important">Aini </h1>
+                                </div>
+                                <div class="content-date content-date-first" style="margin-top: 50px">
+                                    <h2 class="" style="font-family: Book Antiqua, serif !important; color: #000000 !important">
+                                        <label>Ahad, 2 Februari 2025</label>
+                                        <br>
+                                    </h2>
+                                </div>
+                                <div class="content-date text-center">
+                                    <h6 class="" style="font-family: Book Antiqua, serif !important; color: #000000 !important">03 Shaʻban 1446H </h6>
+                                </div>
+                                <div class="content-place mt-5 text-center">
+                                    <h4 class="" style="font-family: Book Antiqua, serif !important; color: #000000 !important">Alami Event Hall </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section second-section section-second-image bg-img">
+                            <div class="content-light text-center">
+                                <h5 class="content-header text-dark second_section_title" style="font-family: Book Antiqua, serif !important; color: #000000 !important">
+                                    <label class='mb-0'>Walimatulurus</label>
+                                    <br>
+                                </h5>
+                                <div class="content-parent mt-4">
+                                    <h3 class=" text-dark font-medium title-font father_name" style="font-family: Cinzel, serif !important;width: 100%;word-break: break-word; color: #000000 !important; font-weight:bold !important">Hazmi Bin Zainol </h3>
+                                    <h3 class="with-separator font-medium text-dark" style="font-family: Poppins, serif !important; color: #000000 !important">&amp;</h3>
+                                    <h3 class=" text-dark font-medium title-font mother_name" style="font-family: Cinzel, serif !important;width: 100%;word-break: break-word; color: #000000 !important; font-weight:bold !important">Zarina Binti Ahmad </h3>
+                                </div>
+                                <div class="content-welcome mt-4">
+                                    <label class=" text-dark highlight-font invitation_text" style="font-family: Book Antiqua, serif !important;width: 100%;word-break: break-word;color: #000000 !important">
+                                        <label>Dengan segala hormatnya mempersilakan tuan/puan ke majlis perkahwinan anakanda kami</label>
+                                        <br>
+                                    </label>
+                                </div>
+                                <div class="content-parent mt-4">
+                                    <h2 class=" text-dark font-medium title-font person_name" style="font-family: Cinzel, serif !important;width: 100%;word-break: break-word; color: #000000 !important; font-weight:bold !important">Muhammad Ariff Bin Hazmi </h2>
+                                    <h2 class="with-separator font-medium text-dark" style="font-family: Poppins, serif !important; color: #000000 !important">&amp;</h2>
+                                    <h2 class=" text-dark font-medium title-font spouse_name" style="font-family: Cinzel, serif !important;width: 100%;word-break: break-word; color: #000000 !important; font-weight:bold !important">Aini Hidanah Hayani Binti Nor Faizal </h2>
+                                </div>
+                                <div class="content-date mt-5">
+                                    <div>
+                                        <div class=" highlight-font font-bold" style="font-family: Book Antiqua, serif !important;width: 100%;word-break: break-word;color: #000000 !important">Tempat </div>
+                                        <div class=" highlight-font address" style="font-family: Book Antiqua, serif !important;width: 100%;word-break: break-word;color: #000000 !important">2-18-G, Space U8 Mall, 6, Persiaran Pasak Bumi, Bukit Jelutong, 40150 Shah Alam, Selangor </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class=" highlight-font font-bold" style="font-family: Book Antiqua, serif !important;width: 100%;word-break: break-word;color: #000000 !important">Tarikh </div>
+                                        <div class=" highlight-font wedding_date" style="font-family: Book Antiqua, serif !important;width: 100%;word-break: break-word;color: #000000 !important">Ahad, 02 Februari 2025 </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class=" highlight-font font-bold" style="font-family: Book Antiqua, serif !important;width: 100%;word-break: break-word;color: #000000 !important">Masa </div>
+                                        <div class=" highlight-font wedding-time" style="font-family: Book Antiqua, serif !important;width: 100%;word-break: break-word;color: #000000 !important">11:30 AM - 4:30 PM </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <button class="btn confirm-attendee" data-toggle="modal" data-target="#calendarModal">Save the date</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section third-section section-third-image bg-img">
+                            <div class="content text-center">
+                                <div class="content-program">
+                                    <h5 class="content-header text-uppercase text-dark third_section_title" style="font-family: Book Antiqua, serif !important; color: #000000 !important">
+                                        <label class='mb-0'></label>
+                                        <br>
+                                    </h5>
+                                    <table class="table no-border table-borderless" style="width: auto; margin: 0 auto; color: #000;">
+                                        <tbody style="font-family: Cinzel, serif !important; color: #000000 !important">
+                                            <tr>
+                                                <td class="text-right" style="width: auto; min-width: 85px">11:30 AM</td>
+                                                <td class="text-left">Kedatangan Tetamu</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" style="width: auto; min-width: 85px">12:30 PM</td>
+                                                <td class="text-left">Ketibaan Pengantin</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" style="width: auto; min-width: 85px">1:30 PM</td>
+                                                <td class="text-left">Makan Beradab</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right" style="width: auto; min-width: 85px">2:30 AM</td>
+                                                <td class="text-left">Persembahan Bunga Api</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section forth-section">
+                            <div class="content-light text-center">
+                                <div class="content-prayer">
+                                    <p>Ya Allah Ya Rahman Ya Rahim, berkatilah majlis perkahwinan ini. Limpahkanlah baraqah dan rahmat kepada kedua mempelai. Kurniakanlah mereka kelak zuriat yang soleh dan solehah. Kekalkanlah jodoh mereka hingga ke jannah,juga sempurnakanlah agama mereka dengan berkat ikatan ini. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-countdown">
+                            <div>
+                                <label class="subtitle-font countdown-title">Countdown</label>
+                            </div>
+                            <div id="countdown" class="row col-md-12" style="margin: 0; padding: 0">
+                                <div class="cd-box col-sm-3">
+                                    <p class="numbers days">00</p>
+                                    <p class="strings timeRefDays">Days</p>
+                                </div>
+                                <div class="cd-box col-sm-3">
+                                    <p class="numbers hours">00</p>
+                                    <p class="strings timeRefHours">Hours</p>
+                                </div>
+                                <div class="cd-box col-sm-3">
+                                    <p class="numbers minutes">00</p>
+                                    <p class="strings timeRefMinutes">Minutes</p>
+                                </div>
+                                <div class="cd-box col-sm-3">
+                                    <p class="numbers seconds">00</p>
+                                    <p class="strings timeRefSeconds">Seconds</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section insta-section mt-5 mb-4">
+                            <div class="instagram-collection" data-url='https://undangan.my/instagram/callback/undangamyweds/carousel'>
+                                <div class="center slider zoom-gallery text-center">
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview1.jpeg/s3_preview_insta/reveal');"></div>
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview2.jpeg/s3_preview_insta/reveal');"></div>
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview2.jpeg/s3_preview_insta/reveal');"></div>
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview4.jpeg/s3_preview_insta/reveal');"></div>
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview5.jpeg/s3_preview_insta/reveal');"></div>
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview6.jpeg/s3_preview_insta/reveal');"></div>
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview7.jpeg/s3_preview_insta/reveal');"></div>
+                                    <div class="collection-item" style="background-image: url('https://undangan.my/asset/mirror/preview8.jpeg/s3_preview_insta/reveal');"></div>
+                                </div>
+                                <div class="slick-dots-container"></div>
+                            </div>
+                        </div>
+                        <div class="section mb-4 mt-5">
+                            <div class="row attendee-counter col-md-12 text-center">
+                                <div class="col-sm-4">
+                                    <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="yes_ui" data-title="Going List">
+                                        <p class="counter counter-yes">0</p>
+                                        <div>
+                                            <p>Going</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="maybe_ui" data-title="Maybe List">
+                                        <p class="counter counter-maybe">0</p>
+                                        <div>
+                                            <p>Maybe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="not_ui" data-title="Not Going List">
+                                        <p class="counter counter-not">0</p>
+                                        <div>
+                                            <p>Not Going</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-attendee" data-rsvp="https://undangan.my/undangamyweds/attendees" data-list="https://undangan.my/KP/attendee/comments?secret_key=undangamyweds"></div>
+                            <div class="wish-section mt-5 mb-5">
+                                <label class="title-font text-center font-medium" style="width: 100%;">WISH TIMELINE</label>
+                                <div class="timeline-list mt-4">
+                                    <div class="owl-carousel owl-theme order-carousel"></div>
+                                    <div class="text-center">
+                                        <span class="fa fa-spin fa-spinner" style="font-size: 3em; color: #e54595;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section last-section" style="padding-bottom: 170px; text-align: center">
+                            <a target="_blank" href="https://undangan.my">
+                                <img src="https://undangan.my/img/undangan/undangan-img-1.png" class="img-fluid img-logo-word-big" alt="logo">
+                            </a>
+                            <div class="text-center mt-5">
+                                <label class="font-14">Visit Our Instagram</label>
+                            </div>
+                            <div class="text-center">
+                                <a class="font-14" target="_blank" href="https://www.instagram.com/undangan.my/">#RSVP.online</a>
+                            </div>
+                        </div>
+                        <div class="action-stick">
+                            <div class="row" style="margin: 0; padding: 10px;">
+                                <div class="col-sm-4">
+                                    <div class="action" data-toggle="modal" data-target="#contactModal">
+                                        <img src="https://undangan.my/img/auricular-phone-symbol-in-a-circle.png">
+                                        <span class="text">Contact</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4" style="position: inherit">
+                                    <div class="action-center btn btn-circle" data-toggle="modal" data-target="#confirmAttendees">
+                                        <img src="https://undangan.my/img/rsvp-icon.png">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="action" data-toggle="modal" data-target="#locationModal">
+                                        <img src="https://undangan.my/img/icon-location-light.png">
+                                        <span class="text">Location</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mb-2">
+                                <label style="font-size: 11px; color: #fff;">
+                                    Create Your Digital Invitation with 
+                                    <a class="text-white" target="_blank" href="https://undangan.my/features">
+                                        <u>RSVP.online</u>
+                                    </a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="action-modal">
+                            <div class="modal modal-attendee fade" id="confirmAttendees" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-title">
+                                            <label style="padding: 10px; font-size: 16px" class="font-bold">Confirm Attendees</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST" action="https://undangan.my/catalog/design/Dani-1546492605/preview" accept-charset="UTF-8" data-url="https://undangan.my/undangamyweds/attendees" id="attendee-form">
+                                                <input name="_token" type="hidden" value="HGCNIKy62Qb6aXHufDby7uViT4eHrQw3zHgJETkq">
+                                                <div class="toggle-form">
+                                                    <div class="row p-0 m-0">
+                                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 at-name" style="text-align: left;">
+                                                            <div class="form-group">
+                                                                <label class="text-light">Your Full Name</label>
+                                                                <input type="text" class="form-control" placeholder="ex: Hafiq" name="attendee_name" id="attendee_name" required maxlength="25" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 at-pax" style="text-align: left;padding-right: 15px;">
+                                                            <div class="form-group">
+                                                                <label class="text-light">Pax</label>
+                                                                <select class="form-control" placeholder="ex: 2" name="pax_number" id="pax_number" autocomplete="off">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                    <option value="19">19</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="21">21</option>
+                                                                    <option value="22">22</option>
+                                                                    <option value="23">23</option>
+                                                                    <option value="24">24</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="26">26</option>
+                                                                    <option value="27">27</option>
+                                                                    <option value="28">28</option>
+                                                                    <option value="29">29</option>
+                                                                    <option value="30">30</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 at-phone" style="text-align: left;">
+                                                            <div class="form-group">
+                                                                <label class="text-light">Phone Number</label>
+                                                                <input type="text" class="form-control" placeholder="ex: 0123456789" name="phone_number" id="phone_number" required maxlength="25" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12" style="text-align: left;">
+                                                        <div class="form-group">
+                                                            <label class="text-light">Ink Your Wish</label>
+                                                            <textarea class="form-control" placeholder="ex: Congrats!!" name="attendee_comment" id="attendee_comment" autocomplete="off"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" name="status" value="">
+                                                </div>
+                                                <div class="row col-md-12 form-button-section" style="margin: 0;padding: 0;">
+                                                    <button type="button" class="btn btn-secondary btn-cancel first-btn col-sm-6">
+                                                        <span class="font-medium" style="color: white;">Cancel</span>
+                                                    </button>
+                                                    <button type="submit" class="btn btn-secondary last-btn col-sm-6">
+                                                        <span class="font-bold" style="color: white;">Confirm</span>
+                                                    </button>
+                                                </div>
+                                                <div class="row col-md-12 form-chooser-section" style="margin: 0;padding: 0;">
+                                                    <button type="button" class="btn btn-secondary first-btn col-sm-4" data-value="-1">
+                                                        <span class="font-medium" style="color: white;">Not Going</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary col-sm-4" data-value="0">
+                                                        <span class="font-medium" style="color: white;">Maybe</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary last-btn col-sm-4" data-value="1">
+                                                        <span class="font-bold" style="color: white;">Going</span>
+                                                    </button>
+                                                </div>
+                                                <i class="fa fa-spin fa-spinner form-loading" style="color: white;margin: 0 auto;font-size: 30px;margin-bottom: 20px; display: none"></i>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal-slide-bottom fade" id="listAttendeeModal" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-title">
+                                            <label class="font-medium"></label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="list row"></div>
+                                            <div class="row" style="margin: 0;padding: 0;">
+                                                <div class="btn btn-secondary last-btn-stack col-md-12" style="border-top: 1px solid #ffffff30 !important;" data-dismiss="modal" aria-label="Close">
+                                                    <span class="text" style="color: white;">Close</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal-slide-bottom fade" id="kadRayaModal" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <a class="btn btn-secondary last-btn-stack" target="_blank" href="https://undangan.my/raya">
+                                                <img style="margin-right: 20px; vertical-align: middle; height: 27px" src="https://undangan.my/img/undangan/undangan-img-6.png" alt="">
+                                                <label style="color: white; margin-bottom: 0; font-size: 15px">Create Your Kad Raya Now</label>
+                                            </a>
+                                            <a class="btn btn-secondary last-btn-stack" target="_blank" href="https://t.me/affiliatekadrayadigital">
+                                                <img style="margin-right: 20px; vertical-align: middle; height: 27px" src="https://undangan.my/img/auricular-phone-symbol-in-a-circle.png" alt="">
+                                                <label style="color: white; margin-bottom: 0; font-size: 15px">Become An Affiliate</label>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal-slide-bottom fade" id="locationModal" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div style="padding: 10px 0 10px 0">Alami Event Hall, Selangor </div>
+                                            <div class="row" style="margin: 0;">
+                                                <a class="btn btn-secondary col-sm-6" target="_blank" href="https://www.google.com/search?q=hotel+near+selangor">
+                                                    <img class="img-icon" src="https://undangan.my/img/hotel.png">
+                                                    <div class="text" style="color: white;">Hotel Nearby</div>
+                                                </a>
+                                                <a class="btn btn-secondary col-sm-6" target="_blank" href="https://www.google.com/search?q=interesting+places+near+selangor">
+                                                    <img class="img-icon" src="https://undangan.my/img/interesting-places.png">
+                                                    <div class="text" style="color: white;">Interesting Places</div>
+                                                </a>
+                                            </div>
+                                            <div id="maps" style="width: 100%; height: 150px"></div>
+                                            <div class="row col-md-12" style="margin: 0;padding: 0;">
+                                                <a class="btn btn-secondary first-btn google-maps col-sm-6" target="_blank" href="https://maps.app.goo.gl/eoyCjPx8UBvLp2Mg8;navigate=yes">
+                                                    <img class="img-icon" style="margin-right: 10px;" src="https://undangan.my/img/google.png">
+                                                    <span class="text" style="color: white;">GMaps</span>
+                                                </a>
+                                                <a class="btn btn-secondary last-btn waze-maps col-sm-6" target="_blank" href="https://waze.com/ul?ll=3.1552,101.7058&amp;navigate=yes&amp;zoom=17">
+                                                    <img class="img-icon" style="margin-right: 10px;" src="https://undangan.my/img/waze.png">
+                                                    <span class="text" style="color: white;">Waze</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal-slide-bottom fade" id="otherModal" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div data-toggle="modal" data-target="#contactModal" class="action btn text-center">
+                                                <img style="margin-right: 20px; vertical-align: middle; height: 27px" src="https://undangan.my/img/auricular-phone-symbol-in-a-circle.png" alt="">
+                                                <label style="color: white; max-width: 200px;margin-bottom: 0; font-size: 15px">Contact</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal-slide-bottom fade" id="contactModal" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div style="text-align: left; cursor: text; white-space: unset;" class="btn">
+                                                <img class="img-icon" style="margin-right: 20px; vertical-align: top" src="https://undangan.my/img/phone-contact.png">
+                                                <label style="color: white; max-width: 200px;margin-bottom: 0;">Hazmi</label>
+                                                <div class="float-right">
+                                                    <a href="http://wa.me/+60133552689" target="_blank" class="mr-1">
+                                                        <img class="img-icon" style="margin-right: 20px;" src="https://undangan.my/img/whatsapp-logo.png">
+                                                    </a>
+                                                    <a href="tel:+60133552689" target="_blank">
+                                                        <img class="img-icon" style="margin-right: 20px;" src="https://undangan.my/img/telephone.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div style="text-align: left; cursor: text; white-space: unset;" class="btn">
+                                                <img class="img-icon" style="margin-right: 20px; vertical-align: top" src="https://undangan.my/img/phone-contact.png">
+                                                <label style="color: white; max-width: 200px;margin-bottom: 0;">Zarina</label>
+                                                <div class="float-right">
+                                                    <a href="http://wa.me/+60193140618" target="_blank" class="mr-1">
+                                                        <img class="img-icon" style="margin-right: 20px;" src="https://undangan.my/img/whatsapp-logo.png">
+                                                    </a>
+                                                    <a href="tel:+60193140618" target="_blank">
+                                                        <img class="img-icon" style="margin-right: 20px;" src="https://undangan.my/img/telephone.png">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a class="btn btn-secondary last-btn-stack" target="_blank" href="https://undangan.my">
+                                                <img src="https://undangan.my/img/undangan/undangan-img-3.png" class="img-fluid img-logo-word-big" alt="logo" style="margin-top: -10px;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal-slide-bottom fade" id="calendarModal" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div style="padding: 10px 0 10px 0; color: white;"></div>
+                                            <div style="padding: 0; color: white; font-size: 32px;">02 Februari 2025 </div>
+                                            <div style="padding: 0; color: white; font-size: 20px">11:30 AM - 4:30 PM </div>
+                                            <div class="row col-md-12" style="margin: 0;padding: 0;">
+                                                <a class="btn btn-secondary first-btn last-btn google-calendar col-sm-12" target="_blank" href="https://calendar.google.com/calendar/u/0/r/eventedit/MHVic241cTYwbTBwa252ZXVhZDIwbmplZ2MgbXVoZGFyaWZmaGF6bWlAbQ">
+                                                    <img class="img-icon" style="margin-right: 20px;" src="https://undangan.my/img/calendar-google.png">
+                                                    <span class="text" style="color: white;">Add to Calendar</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal modal-slide-bottom fade" id="QrModal" role="dialog">
+                                <div class="modal-dialog animated" data-enter="slideInUp" data-exit="slideOutDown" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-10">
+                                            <div style="padding: 10px" class="text-center">
+                                                <img src="" class="img-responsive" alt=""/>
+                                            </div>
+                                            <div class="text-center mt-3 text-white">Scan QR Code using your banking apps to send gift. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="undangan-overlay">
+                        <div class="section overlay-transbox">
+                            <div class="content text-center h-100">
+                                <div class="overlay-img">
+                                    <img src="https://undangan.my/img/undangan/undangan-img-4.png">
+                                    <img style="margin-top: 20px" src="https://undangan.my/img/undangan/undangan-img-7.png">
+                                    <div class="text-center mt-4">
+                                        <button class="btn confirm-attendee px-4" onClick="openInvitation()">OPEN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <footer>
-            <p>Direka Oleh</p>
-            <p>Muhd Ariff Bin Hazmi</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+        <script src="https://undangan.my/pack/card/pack.min.js?id=e013fea9936dac55bff8"></script>
+        <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+        <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+        <script>
+            /* Disable scrolling by setting the overflow property to hidden */
+            document.body.style.overflow = 'hidden';
+            function changeAnimation(x) {
+                $('.modal .modal-dialog').attr('class', 'modal-dialog ' + x + ' animated');
+            }
+            $('.modal').on('show.bs.modal', function(e) {
+                changeAnimation($(this).find('.modal-dialog').data('enter'));
+            });
+            $('.modal').on('hide.bs.modal', function(e) {
+                changeAnimation($(this).find('.modal-dialog').data('exit'));
+                $('#attendee-form .form-button-section .btn-cancel').trigger('click');
+            });
+            let toggleForm = $('#attendee-form .toggle-form');
+            $('#attendee-form').on('click', '.form-chooser-section .btn', function() {
+                let value = $($(this)).data('value');
+                if (value === -1) {
+                    toggleForm.find('.at-pax').hide();
+                    toggleForm.find('.at-slot').hide();
+                } else {
+                    toggleForm.find('.at-pax').show();
+                    toggleForm.find('.at-slot').show();
+                }
+                toggleForm.find('input[name=status]').val(value);
+                toggleForm.addClass('expand');
+            });
+            $('#attendee-form').on('click', '.form-button-section .btn-cancel', function() {
+                toggleForm.find('input[name=status]').val(null);
+                toggleForm.removeClass('expand');
+            });
+            $('#attendee-form').submit(function(e) {
+                e.preventDefault();
+                let data = getDataFromInArray($(this));
+                $('.form-button-section').hide();
+                $('.form-loading').show();
+                axios.post($(this).data('url'), data).then(function(response) {
+                    refreshInvitee();
+                    $('.form-button-section').show();
+                    $('.form-loading').hide();
+                    $('.modal').modal('hide');
+                    $('#attendee_name', '#attendee_comment').val("");
+                    notifySuccess(response.data.message);
+                }).catch(error=>{
+                    $('.form-button-section').show();
+                    $('.form-loading').hide();
+                    notifyError(error.response.data);
+                }
+                );
+            });
+            $('#pax_number').on('change', function() {
+                if (parseInt($(this).val()) > parseInt($(this).attr('max'))) {
+                    $('#attendee-form').find('button[type=submit]').attr('disabled', 'disabled');
+                } else {
+                    $('#attendee-form').find('button[type=submit]').removeAttr('disabled');
+                }
+            });
+            $(function() {
+                let vInstaElem = $('.instagram-collection');
+                let slick = vInstaElem.find('.center');
+                let maxDots = 4;
+                let transformXIntervalNext = -18;
+                let transformXIntervalPrev = 18;
+                function setBoundries(slick, state) {
+                    if (state === 'default') {
+                        slick.find('ul.slick-dots li').eq(4).addClass('n-small-1');
+                    }
+                }
+                function triggerSlick(slick) {
+                    slick.on('init', function(event, slick) {
+                        $(this).find('ul.slick-dots').wrap("<div class='slick-dots-container'></div>");
+                        $(this).find('ul.slick-dots li').each(function(index) {
+                            $(this).addClass('dot-index-' + index);
+                        });
+                        $(this).find('ul.slick-dots').css('transform', 'translateX(0)');
+                        setBoundries($(this), 'default');
+                    });
+                    let transformCount = 0;
+                    slick.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                        let totalCount = $(this).find('.slick-dots li').length;
+                        if (totalCount > maxDots) {
+                            if (nextSlide > currentSlide) {
+                                if ($(this).find('ul.slick-dots li.dot-index-' + nextSlide).hasClass('n-small-1')) {
+                                    if (!$(this).find('ul.slick-dots li:last-child').hasClass('n-small-1')) {
+                                        transformCount = transformCount + transformXIntervalNext;
+                                        $(this).find('ul.slick-dots li.dot-index-' + nextSlide).removeClass('n-small-1');
+                                        let nextSlidePlusOne = nextSlide + 1;
+                                        $(this).find('ul.slick-dots li.dot-index-' + nextSlidePlusOne).addClass('n-small-1');
+                                        $(this).find('ul.slick-dots').css('transform', 'translateX(' + transformCount + 'px)');
+                                        let pPointer = nextSlide - 3;
+                                        let pPointerMinusOne = pPointer - 1;
+                                        $(this).find('ul.slick-dots li').eq(pPointerMinusOne).removeClass('p-small-1');
+                                        $(this).find('ul.slick-dots li').eq(pPointer).addClass('p-small-1');
+                                    }
+                                }
+                            } else {
+                                if ($(this).find('ul.slick-dots li.dot-index-' + nextSlide).hasClass('p-small-1')) {
+                                    if (!$(this).find('ul.slick-dots li:first-child').hasClass('p-small-1')) {
+                                        transformCount = transformCount + transformXIntervalPrev;
+                                        $(this).find('ul.slick-dots li.dot-index-' + nextSlide).removeClass('p-small-1');
+                                        let nextSlidePlusOne = nextSlide - 1;
+                                        $(this).find('ul.slick-dots li.dot-index-' + nextSlidePlusOne).addClass('p-small-1');
+                                        $(this).find('ul.slick-dots').css('transform', 'translateX(' + transformCount + 'px)');
+                                        let nPointer = currentSlide + 3;
+                                        let nPointerMinusOne = nPointer - 1;
+                                        $(this).find('ul.slick-dots li').eq(nPointer).removeClass('n-small-1');
+                                        $(this).find('ul.slick-dots li').eq(nPointerMinusOne).addClass('n-small-1');
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+                ;triggerSlick(slick);
+                vInstaElem.find('.center').slick({
+                    dots: true,
+                    infinite: true,
+                    prevArrow: false,
+                    nextArrow: false,
+                    centerMode: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 3
+                });
+                /* $(".overlay-img").addClass('animate'); $(".undangan-overlay").fadeOut(); */
+                loadPreviewMap();
+                $("#countdown").countdown({
+                    date: "11 August 2024 11:30:00",
+                    format: "on"
+                });
+                let cal = ics();
+                let calendar = $('#data-calendar');
+                cal.addEvent(calendar.data('jemputan'), calendar.data('detail'), calendar.data('location'), calendar.data('date-start'), calendar.data('date-end'));
+            });
+            $(document).on("contextmenu", function(e) {
+                console.log("%cHA AH! No PICKING PLEASE. YOU MUST BE REASONABLE PERSON, RIGHT?? ", "color: #840fb5; font-family: sans-serif;" + " font-size: 4.5em; font-weight: bolder; text-shadow: #000 1px 1px;");
+                return false;
+            });
+            function openInvitation(x) {
+                $(".undangan-overlay").animate({
+                    opacity: 0
+                }, 500, function() {
+                    $(".action-stick").delay(500).animate({
+                        opacity: 1,
+                        bottom: 0
+                    }, 500);
+                    $(".card-plain > *").delay(500).animate({
+                        opacity: 1
+                    }, 500, function() {
+                        /* Enable scrolling by setting the overflow property to its default value */
+                        document.body.style.overflow = '';
+                        /* Now, let's remove the overlay element */
+                        $(".undangan-overlay").remove();
+                    });
+                });
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(function() {})
+        </script>
+    </body>
 </html>
