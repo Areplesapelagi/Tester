@@ -1,1 +1,1 @@
-
+chmod 0666 attendees.txt
