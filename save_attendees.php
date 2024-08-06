@@ -1,16 +1,28 @@
 <?php
 // File to store attendee data
-$filename = 'attendees.txt';
+$filename = 'attendees.md';
 
 // Get form data
-$attendee_name = $_POST['attendee_name'];
-$pax_number = $_POST['pax_number'];
-$phone_number = $_POST['phone_number'];
-$attendee_comment = $_POST['attendee_comment'];
-$status = $_POST['status'];
+$attendee_name = $_POST['attendee_name'] ?? '';
+$pax_number = $_POST['pax_number'] ?? '';
+$phone_number = $_POST['phone_number'] ?? '';
+$attendee_comment = $_POST['attendee_comment'] ?? '';
+$status = $_POST['status'] ?? '';
 
-// Prepare data to write
-$data = "Name: $attendee_name, Pax: $pax_number, Phone: $phone_number, Comment: $attendee_comment, Status: $status\n";
+// Map status code to human-readable text (optional)
+$status_map = [
+    '1' => 'Going',
+    '0' => 'Maybe',
+    '-1' => 'Not Going',
+];
+$status_text = $status_map[$status] ?? 'Unknown';
+
+// Prepare data to write in Markdown format
+$data = "### Attendee: $attendee_name\n";
+$data .= "- **Pax**: $pax_number\n";
+$data .= "- **Phone**: $phone_number\n";
+$data .= "- **Comment**: $attendee_comment\n";
+$data .= "- **Status**: $status_text\n\n";
 
 // Write data to file
 file_put_contents($filename, $data, FILE_APPEND);
