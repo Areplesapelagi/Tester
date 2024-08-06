@@ -390,43 +390,57 @@
                             </div>
                         </div>
                         <div class="section mb-4 mt-5">
-                            <div class="row attendee-counter col-md-12 text-center">
-                                <div class="col-sm-4">
-                                    <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="yes_ui" data-title="Going List">
-                                        <p class="counter counter-yes">0</p>
-                                        <div>
-                                            <p>Going</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="maybe_ui" data-title="Maybe List">
-                                        <p class="counter counter-maybe">0</p>
-                                        <div>
-                                            <p>Maybe</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="not_ui" data-title="Not Going List">
-                                        <p class="counter counter-not">0</p>
-                                        <div>
-                                            <p>Not Going</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section-attendee" data-rsvp="https://undangan.my/undangamyweds/attendees" data-list="https://undangan.my/KP/attendee/comments?secret_key=undangamyweds"></div>
-                            <div class="wish-section mt-5 mb-5">
-                                <label class="title-font text-center font-medium" style="width: 100%;">WISH TIMELINE</label>
-                                <div class="timeline-list mt-4">
-                                    <div class="owl-carousel owl-theme order-carousel"></div>
-                                    <div class="text-center">
-                                        <span class="fa fa-spin fa-spinner" style="font-size: 3em; color: #e54595;"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="row attendee-counter col-md-12 text-center">
+        <div class="col-sm-4">
+            <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="yes_ui" data-title="Going List">
+                <p class="counter counter-yes" id="going-counter">0</p>
+                <div>
+                    <p>Going</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="maybe_ui" data-title="Maybe List">
+                <p class="counter counter-maybe" id="maybe-counter">0</p>
+                <div>
+                    <p>Maybe</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="counter-item" data-toggle="modal" data-target="#listAttendeeModal" data-value="not_ui" data-title="Not Going List">
+                <p class="counter counter-not" id="not-going-counter">0</p>
+                <div>
+                    <p>Not Going</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-attendee" data-rsvp="https://undangan.my/undangamyweds/attendees" data-list="https://undangan.my/KP/attendee/comments?secret_key=undangamyweds"></div>
+    <div class="wish-section mt-5 mb-5">
+        <label class="title-font text-center font-medium" style="width: 100%;">WISH TIMELINE</label>
+        <div class="timeline-list mt-4">
+            <div class="owl-carousel owl-theme order-carousel"></div>
+            <div class="text-center">
+                <span class="fa fa-spin fa-spinner" style="font-size: 3em; color: #e54595;"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('fetch_attendees.php')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('going-counter').textContent = data.going;
+                document.getElementById('maybe-counter').textContent = data.maybe;
+                document.getElementById('not-going-counter').textContent = data.not_going;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    });
+</script>
+
                         <div class="section last-section" style="padding-bottom: 170px; text-align: center">
                             <a target="_blank" href="https://undangan.my">
                                 <img src="https://undangan.my/img/undangan/undangan-img-1.png" class="img-fluid img-logo-word-big" alt="logo">
